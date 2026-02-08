@@ -110,6 +110,9 @@
     <EmbeddedResource Include="SETTINGS.resx">
       <DependentUpon>SETTINGS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2.resx">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="USERSMAINFORM.resx">
       <DependentUpon>USERSMAINFORM.cs</DependentUpon>
     </EmbeddedResource>
