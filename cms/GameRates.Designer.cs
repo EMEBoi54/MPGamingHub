@@ -71,10 +71,11 @@
             this.mainTableLayout.Controls.Add(this.editPanel, 1, 0);
             this.mainTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainTableLayout.Location = new System.Drawing.Point(0, 0);
+            this.mainTableLayout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mainTableLayout.Name = "mainTableLayout";
             this.mainTableLayout.RowCount = 1;
             this.mainTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.mainTableLayout.Size = new System.Drawing.Size(1727, 939);
+            this.mainTableLayout.Size = new System.Drawing.Size(1943, 1174);
             this.mainTableLayout.TabIndex = 0;
             // 
             // dataPanel
@@ -83,10 +84,11 @@
             this.dataPanel.Controls.Add(this.dgvGameRates);
             this.dataPanel.Controls.Add(this.btnAddNew);
             this.dataPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataPanel.Location = new System.Drawing.Point(3, 3);
+            this.dataPanel.Location = new System.Drawing.Point(3, 4);
+            this.dataPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataPanel.Name = "dataPanel";
-            this.dataPanel.Padding = new System.Windows.Forms.Padding(20);
-            this.dataPanel.Size = new System.Drawing.Size(1202, 933);
+            this.dataPanel.Padding = new System.Windows.Forms.Padding(22, 25, 22, 25);
+            this.dataPanel.Size = new System.Drawing.Size(1354, 1166);
             this.dataPanel.TabIndex = 0;
             // 
             // dgvGameRates
@@ -124,7 +126,8 @@
             this.dgvGameRates.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvGameRates.EnableHeadersVisualStyles = false;
             this.dgvGameRates.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvGameRates.Location = new System.Drawing.Point(32, 79);
+            this.dgvGameRates.Location = new System.Drawing.Point(36, 99);
+            this.dgvGameRates.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvGameRates.Name = "dgvGameRates";
             this.dgvGameRates.ReadOnly = true;
             this.dgvGameRates.RowHeadersVisible = false;
@@ -136,7 +139,7 @@
             this.dgvGameRates.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvGameRates.RowTemplate.Height = 45;
             this.dgvGameRates.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvGameRates.Size = new System.Drawing.Size(1127, 833);
+            this.dgvGameRates.Size = new System.Drawing.Size(1270, 1041);
             this.dgvGameRates.TabIndex = 1;
             this.dgvGameRates.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvGameRates_CellContentClick);
             // 
@@ -195,9 +198,10 @@
             this.btnAddNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddNew.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddNew.ForeColor = System.Drawing.Color.White;
-            this.btnAddNew.Location = new System.Drawing.Point(32, 20);
+            this.btnAddNew.Location = new System.Drawing.Point(36, 25);
+            this.btnAddNew.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddNew.Name = "btnAddNew";
-            this.btnAddNew.Size = new System.Drawing.Size(180, 50);
+            this.btnAddNew.Size = new System.Drawing.Size(202, 62);
             this.btnAddNew.TabIndex = 0;
             this.btnAddNew.Text = "➕ Add New Rate";
             this.btnAddNew.UseVisualStyleBackColor = false;
@@ -208,10 +212,11 @@
             this.editPanel.BackColor = System.Drawing.Color.White;
             this.editPanel.Controls.Add(this.editTableLayout);
             this.editPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.editPanel.Location = new System.Drawing.Point(1211, 3);
+            this.editPanel.Location = new System.Drawing.Point(1363, 4);
+            this.editPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.editPanel.Name = "editPanel";
-            this.editPanel.Padding = new System.Windows.Forms.Padding(20);
-            this.editPanel.Size = new System.Drawing.Size(513, 933);
+            this.editPanel.Padding = new System.Windows.Forms.Padding(22, 25, 22, 25);
+            this.editPanel.Size = new System.Drawing.Size(577, 1166);
             this.editPanel.TabIndex = 1;
             this.editPanel.Visible = false;
             this.editPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.editPanel_Paint);
@@ -233,23 +238,24 @@
             this.editTableLayout.Controls.Add(this.btnCancel, 0, 10);
             this.editTableLayout.Controls.Add(this.btnDelete, 0, 11);
             this.editTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.editTableLayout.Location = new System.Drawing.Point(20, 20);
+            this.editTableLayout.Location = new System.Drawing.Point(22, 25);
+            this.editTableLayout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.editTableLayout.Name = "editTableLayout";
             this.editTableLayout.RowCount = 13;
-            this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
             this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
             this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
             this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+            this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+            this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
             this.editTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.editTableLayout.Size = new System.Drawing.Size(473, 893);
+            this.editTableLayout.Size = new System.Drawing.Size(533, 1116);
             this.editTableLayout.TabIndex = 0;
             // 
             // lblEditTitle
@@ -260,7 +266,7 @@
             this.lblEditTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(251)))));
             this.lblEditTitle.Location = new System.Drawing.Point(3, 0);
             this.lblEditTitle.Name = "lblEditTitle";
-            this.lblEditTitle.Size = new System.Drawing.Size(467, 60);
+            this.lblEditTitle.Size = new System.Drawing.Size(527, 75);
             this.lblEditTitle.TabIndex = 0;
             this.lblEditTitle.Text = "🎮 Edit Rate";
             this.lblEditTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -271,9 +277,9 @@
             this.lblName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblName.Location = new System.Drawing.Point(3, 60);
+            this.lblName.Location = new System.Drawing.Point(3, 75);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(467, 30);
+            this.lblName.Size = new System.Drawing.Size(527, 38);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "📝 Name:";
             this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -285,9 +291,10 @@
             this.txtName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtName.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtName.Location = new System.Drawing.Point(3, 93);
+            this.txtName.Location = new System.Drawing.Point(3, 117);
+            this.txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(467, 30);
+            this.txtName.Size = new System.Drawing.Size(527, 34);
             this.txtName.TabIndex = 2;
             // 
             // lblCourtType
@@ -296,9 +303,9 @@
             this.lblCourtType.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCourtType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lblCourtType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblCourtType.Location = new System.Drawing.Point(3, 130);
+            this.lblCourtType.Location = new System.Drawing.Point(3, 163);
             this.lblCourtType.Name = "lblCourtType";
-            this.lblCourtType.Size = new System.Drawing.Size(467, 30);
+            this.lblCourtType.Size = new System.Drawing.Size(527, 38);
             this.lblCourtType.TabIndex = 3;
             this.lblCourtType.Text = "🏟️ Court Type:";
             this.lblCourtType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -310,9 +317,10 @@
             this.txtCourtType.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtCourtType.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtCourtType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtCourtType.Location = new System.Drawing.Point(3, 163);
+            this.txtCourtType.Location = new System.Drawing.Point(3, 205);
+            this.txtCourtType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCourtType.Name = "txtCourtType";
-            this.txtCourtType.Size = new System.Drawing.Size(467, 30);
+            this.txtCourtType.Size = new System.Drawing.Size(527, 34);
             this.txtCourtType.TabIndex = 4;
             // 
             // lblGameType
@@ -321,9 +329,9 @@
             this.lblGameType.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblGameType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lblGameType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblGameType.Location = new System.Drawing.Point(3, 200);
+            this.lblGameType.Location = new System.Drawing.Point(3, 251);
             this.lblGameType.Name = "lblGameType";
-            this.lblGameType.Size = new System.Drawing.Size(467, 30);
+            this.lblGameType.Size = new System.Drawing.Size(527, 38);
             this.lblGameType.TabIndex = 5;
             this.lblGameType.Text = "🎯 Game Type:";
             this.lblGameType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -335,9 +343,10 @@
             this.txtGameType.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtGameType.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtGameType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtGameType.Location = new System.Drawing.Point(3, 233);
+            this.txtGameType.Location = new System.Drawing.Point(3, 293);
+            this.txtGameType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtGameType.Name = "txtGameType";
-            this.txtGameType.Size = new System.Drawing.Size(467, 30);
+            this.txtGameType.Size = new System.Drawing.Size(527, 34);
             this.txtGameType.TabIndex = 6;
             // 
             // lblRate
@@ -346,9 +355,9 @@
             this.lblRate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblRate.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lblRate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblRate.Location = new System.Drawing.Point(3, 270);
+            this.lblRate.Location = new System.Drawing.Point(3, 339);
             this.lblRate.Name = "lblRate";
-            this.lblRate.Size = new System.Drawing.Size(467, 30);
+            this.lblRate.Size = new System.Drawing.Size(527, 38);
             this.lblRate.TabIndex = 7;
             this.lblRate.Text = "💰 Rate per hour:";
             this.lblRate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -360,9 +369,10 @@
             this.txtRate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtRate.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtRate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtRate.Location = new System.Drawing.Point(3, 303);
+            this.txtRate.Location = new System.Drawing.Point(3, 381);
+            this.txtRate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtRate.Name = "txtRate";
-            this.txtRate.Size = new System.Drawing.Size(467, 30);
+            this.txtRate.Size = new System.Drawing.Size(527, 34);
             this.txtRate.TabIndex = 8;
             // 
             // btnSave
@@ -373,9 +383,10 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(3, 343);
+            this.btnSave.Location = new System.Drawing.Point(3, 431);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(467, 44);
+            this.btnSave.Size = new System.Drawing.Size(527, 54);
             this.btnSave.TabIndex = 9;
             this.btnSave.Text = "💾 Save Changes";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -389,9 +400,10 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnCancel.Location = new System.Drawing.Point(3, 393);
+            this.btnCancel.Location = new System.Drawing.Point(3, 493);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(467, 44);
+            this.btnCancel.Size = new System.Drawing.Size(527, 54);
             this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "❌ Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -405,9 +417,10 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(3, 443);
+            this.btnDelete.Location = new System.Drawing.Point(3, 555);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(467, 44);
+            this.btnDelete.Size = new System.Drawing.Size(527, 54);
             this.btnDelete.TabIndex = 11;
             this.btnDelete.Text = "🗑️ Delete Rate";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -416,12 +429,13 @@
             // 
             // GameRates
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.mainTableLayout);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "GameRates";
-            this.Size = new System.Drawing.Size(1727, 939);
+            this.Size = new System.Drawing.Size(1943, 1174);
             this.mainTableLayout.ResumeLayout(false);
             this.dataPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGameRates)).EndInit();
