@@ -74,7 +74,7 @@
             this.pictureBox1.Image = global::cms.Properties.Resources.MATCHPOINT__8_;
             this.pictureBox1.Location = new System.Drawing.Point(-5, 50);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(999, 1065);
+            this.pictureBox1.Size = new System.Drawing.Size(1014, 1065);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
